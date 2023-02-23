@@ -1,4 +1,4 @@
-variable "vpc subnets" {
+variable "vpc_subnets" {
   type        = string
   default     = "Vpc"
   description = "This is the AWS VPC subnets public / private to use."
