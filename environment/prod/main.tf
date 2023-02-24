@@ -18,9 +18,9 @@ module "networking" {
   max_subnets                   = 6
   public_cidrs                  = ["10.0.5.0/24", "10.0.6.0/24", "10.0.9.0/24"]
   private_cidrs                 = ["10.0.7.0/24", "10.0.8.0/24", "10.0.10.0/24"]
-  azs                           = ["us-west-1a",   "us-west-1b"]
-  isntance_type                 = "t2.medium"
+  azs                           = ["us-west-1b",  "us-west-1c", "us-west-2a"]
+  instance_type                 = "t2.medium"
   key_name                      = "prod-bastion-host-key"
-  associate_public_ip_address   = true
-  evn                           = "prod"
+  associate_public_ip_address   = "true"
+  env                           = "prod"
 }
